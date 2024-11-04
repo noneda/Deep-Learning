@@ -1,0 +1,10 @@
+{
+  "accentColor": "#42b883",
+  "cssTheme": "Everforest",
+  "theme": "obsidian",
+  "textFontFamily": "Fira Code",
+  "monospaceFontFamily": "3270 Nerd Font Mono",
+  "interfaceFontFamily": "DaddyTimeMono Nerd Font",
+  "baseFontSizeAction": true,
+  "nativeMenus": true
+}
