@@ -52,6 +52,6 @@ print(changeable_tensor)
 
 #TODO: Crate random Tensors 
 
-    tensorRandom = tf.random.Generator.from_seed(42)
-    tensorRandom = tensorRandom.normal(shape=(3,2))
-    print(tensorRandom)
+tensorRandom = tf.random.Generator.from_seed(42)
+tensorRandom = tensorRandom.normal(shape=(3,2))
+print(tensorRandom)
