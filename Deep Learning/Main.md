@@ -69,5 +69,43 @@ This works like... The neuronal are learning patterns right?...  But it need a m
 ```python
 tensorRandom = tf.random.Generator.from_seed(42)
 tensorRandom = tensorRandom.normal(shape=(3,2))
-print(tensorRandom)
 ```
+
+>[!IMPORTANT]
+>RULES that you´ll have on your mind when you create a Random Tensors
+>
+> >If neither the global seed nor the operation seed is set: A randomly picked seed is used for his OP.
+> 
+> >If the graph-level seed is set, but the operation is not: The system deterministically pick an operation seed in conjunction with the graph-level seed so that it gets a unique random sequence. Within the same version of TensorFlow and User-Code, this sequence is deterministic. However across different versions, this sequence might change. If the code depends on particular seeds to work, specify both graph-level and operation-level seeds explicitly.
+> 
+> >If the operation seed is set, but the global seed is not set: A default global seed ant the specified operation seed are used to determinate  the random sequence
+> 
+> >If both the global and the operation seed are set: Both seeds are used in conjunction to determine the random sequence
+> 
+
+
+**Otherwise** to make a Tensors
+
+```python 
+tensor_len = tf.ones([3,3]) 
+```
+Those create a Tensor Two-dimensional with a 3 Row and 3 Columns with a unique value that is One
+
+```python
+arr = tf.zeros(shape=(3,3,3))
+```
+**Or** use a zeros to create the same... but with Zeros
+
+**Now** using a Lib Numpy can Create a tensors more Fast
+
+```python
+import numpy as np
+
+arr = np.arange(1,25, dtype=np.int32)
+tensor = tf.constant(arr, shape=(2,3,4))
+print(tensor)
+```
+
+When we created a Array that have a range pre-made and only make insert a shape from tensor and Wala...
+
+

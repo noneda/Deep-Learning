@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Main.md",
+                "file": "Deep Learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Main"
+              "title": "Deep Learning"
             }
           }
         ]
@@ -164,8 +164,8 @@
   },
   "active": "4d0fec89f5fc6d09",
   "lastOpenFiles": [
-    "Deep Learning.md",
     "Main.md",
+    "Deep Learning.md",
     "Untitled"
   ]
 }
