@@ -72,7 +72,6 @@ print(tensor)
 
 """
 
-
 #TODO: Awake 
 
 arr = tf.zeros(shape=(3,3,3))
