@@ -109,3 +109,33 @@ print(tensor)
 When we created a Array that have a range pre-made and only make insert a shape from tensor and Wala...
 
 
+**Now** i get a information about tensors...
+
+- Shape 
+
+	The length of each of the dimensions of a tensor
+
+```python
+tensor.shape
+```
+- Rank
+
+	The number  of tensor dimensions
+
+```python
+tensor.ndim
+```
+- Axis or Dimension
+ 
+	A particular dimension of a tensor
+
+```python
+tensor[:, n] ... 
+```
+- Size
+
+	The total number of items in the tensor
+```python
+tf.size(tensor)
+```
+
